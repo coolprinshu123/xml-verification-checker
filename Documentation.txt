@@ -1,0 +1,14 @@
+The code takes the first argument as the xml file whose validity is to be checked. It opens the file in readable mode and traverse line by line checking various conditions. The following package checks for the three condition. How the three conditions are checked is stated below.
+
+1. The beginning and ending tags are correctly nested with nothing missing and nothing overlapping :
+For checking this I have got the names extracted using regular expression and stored it in a stack and whenever the opening of a   tag comes I push it in the stack and whenever a closing of a tag comes I check whether the top word is same as the closing tag. If it is same then I pop that element. It is similar to checking balanced parenthesis problem.
+
+2. The elements tags does contain only characters [a-z][A-Z] :
+For checking this I have removed the brackets and used string.isalpha() function on the String. If the string contains only strings then it returns true else false.
+
+3. All the tags are contained within the root tag :
+For checking this I have checked whether the first and the last matching string in the regular expression is same or not. If it is same then it follows otherwise not.
+
+I have used two regular expression in the code :
+1. For checking the opening tags : '<+\w+'
+2. For checking the closing tags : '<+\/+\w+'
