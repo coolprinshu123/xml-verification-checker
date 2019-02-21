@@ -17,8 +17,9 @@ $ python xyz.py test.xml
 output will be a single line stating "Well formed" or "Not well formed".
  
 ---------------------------------------------------------------------------
-<<<<<<< HEAD
-Sejal Nanda
-=======
 Prinshu Kumar
->>>>>>> ec89b1ad1a795421202b51ec7837a5e603fb07a1
+<<<<<<< HEAD
+IIT Ropar
+=======
+2016csb1051
+>>>>>>> 6d6b79cf8217b0be30b05f74582bc3c48c7ff3ab
